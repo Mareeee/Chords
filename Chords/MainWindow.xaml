@@ -1,0 +1,27 @@
+﻿<Window x:Class="SoundPlayerApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Chord Player" Height="720" Width="1280"
+        Icon="Images\logo.png">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="307*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" Margin="513,0,0,0">
+            <Button Name="UploadChod"
+                    Content="Upload Chord"
+                    Width="150"
+                    Height="40"
+                    Click="UploadChord_Click"/>
+
+            <Button Name="PlayChord"
+                    Content="Play Chord"
+                    Width="150"
+                    Height="40"
+                    Margin="0,20,0,0"
+                    Click="PlayChord_Click"
+                    IsEnabled="False"/>
+        </StackPanel>
+    </Grid>
+</Window>
